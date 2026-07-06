@@ -44,12 +44,12 @@ export default function Community({ user }: CommunityProps) {
   
   // Mock leaderboard data - in a real app, this would come from an API
   const leaderboardData = [
-    { rank: 1, name: "Sarah J.", initials: "SJ", points: 2345, footprint: 65 },
-    { rank: 2, name: "Michael T.", initials: "MT", points: 2112, footprint: 72 },
-    { rank: 3, name: "Priya K.", initials: "PK", points: 1978, footprint: 78 },
+    { rank: 1, name: "achudhan", initials: "A", points: 2345, footprint: 65 },
+    { rank: 2, name: "harini", initials: "V", points: 2112, footprint: 72 },
+    { rank: 3, name: "shan", initials: "M", points: 1978, footprint: 78 },
     { userRank: true, rank: userRanking, name: user.fullName || user.username, initials: user.avatarInitials || "JS", points: user.points || 350, footprint: latestFootprint?.totalEmissions || 115 },
-    { rank: 15, name: "Alex N.", initials: "AN", points: 980, footprint: 125 },
-    { rank: 16, name: "Taylor W.", initials: "TW", points: 945, footprint: 131 }
+    { rank: 15, name: "darwin", initials: "jk", points: 980, footprint: 125 },
+    { rank: 16, name: "teju", initials: "B", points: 945, footprint: 131 }
   ].sort((a, b) => a.rank - b.rank);
   
   return (
